@@ -1,0 +1,14 @@
+from flask import Flask
+
+app = Flask(__name__) 
+
+@app.route("/info") 
+def lwinfo():
+    return "Hello, i am lw india"  
+
+@app.route("/phone")
+def lwphone():
+    return "000000000000"
+
+    app.run(host="0.0.0.0")  
+
